@@ -8,22 +8,36 @@ import {
   NavMenu,
   NavItems,
   NavLink,
+  NavBtn,
+  NavBtnLink,
 } from "./NavBarElements";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Bank Jabar</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItems>
               <NavLink to="about">About</NavLink>
             </NavItems>
+            <NavItems>
+              <NavLink to="discover">Discover</NavLink>
+            </NavItems>
+            <NavItems>
+              <NavLink to="service">Service</NavLink>
+            </NavItems>
+            <NavItems>
+              <NavLink to="signup">SignUp</NavLink>
+            </NavItems>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
