@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "./BottomElements";
 import Video from "./../../videos/video.mp4";
+
 import {
   HeroContainer,
   HeroBg,
@@ -23,13 +24,19 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/m p4" />
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Deni Gunawan</HeroH1>
         <HeroP>Full Stack Web Developer</HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="signup"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+          >
             Kenal Saya yuk {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
