@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "react-scroll";
+import Button from "../HeroSection/ButtonElements";
 
 import {
-  imgWrap,
+  ImgWrap,
   Img,
   Column2,
   Column1,
@@ -16,26 +16,38 @@ import {
   BtnWrap,
 } from "./InfoSectionElement";
 
-const InfoSection = () => {
+const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  headline,
+  darkText,
+  description,
+  ligthText,
+  buttonLabel,
+  img,
+  alt,
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>TopLine</TopLine>
-                <Heading>Heading</Heading>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading ligthText={ligthText}>{headline}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
               </TextWrapper>
               <BtnWrap>
-                <Button to="home" />
+                <Button to="home">{buttonLabel}</Button>
               </BtnWrap>
             </Column1>
             <Column2>
-              <imgWrap>
-                <Img />
-              </imgWrap>
+              <ImgWrap>
+                <Img src={img} alt={alt} />
+              </ImgWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>

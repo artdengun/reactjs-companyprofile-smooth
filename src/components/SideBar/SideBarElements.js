@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkScroll } from "react-scroll";
-import { Link as LinkRouter } from "react-router-dom";
+
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
+  height: 100%;
   height: 100%;
   background: #0d0d0d;
   display: grid;
