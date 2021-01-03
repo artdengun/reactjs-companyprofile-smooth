@@ -67,7 +67,8 @@ const Footer = () => {
               Best Team
             </SocialLogo>
             <WebsiteRights>
-              Deni Gunawan {new Date().getFullYear()}
+              Deni Gunawan © {new Date().getFullYear()}
+              <div>&nbsp;</div>
               All Rights Reserved.
             </WebsiteRights>
             <SocialIcons>
