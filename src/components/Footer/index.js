@@ -1,5 +1,7 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaYoutube, FaGithubAlt } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
+
 import {
   FooterContainer,
   FooterWrap,
@@ -16,6 +18,9 @@ import {
   SocialIconLink,
 } from "./FooterElements";
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
@@ -58,7 +63,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Best Team</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              Best Team
+            </SocialLogo>
             <WebsiteRights>
               Deni Gunawan @ {new Date().getFullYear()}
               All Rights Reserved

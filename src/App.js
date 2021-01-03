@@ -1,15 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "../src/pages/index";
-import SignIn from "../src/pages/signIn";
+import SignInPage from "./pages/signIn";
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/" component={Home} exact />
-        {/* <Route path="/signIn" component={SignIn} exact /> */}
+        <Route path="/signIn" component={SignInPage} exact />
       </Switch>
-      <Home />
     </Router>
   );
 }
