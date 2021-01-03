@@ -17,7 +17,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Bank Jabar</NavLogo>
+          <NavLogo to="/">Best Team</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
             </NavItems>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/signIn">Sign In</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
