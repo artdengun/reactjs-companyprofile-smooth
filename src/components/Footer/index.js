@@ -67,8 +67,8 @@ const Footer = () => {
               Best Team
             </SocialLogo>
             <WebsiteRights>
-              Deni Gunawan @ {new Date().getFullYear()}
-              All Rights Reserved
+              Deni Gunawan {new Date().getFullYear()}
+              All Rights Reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
@@ -80,7 +80,11 @@ const Footer = () => {
               <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Github">
+              <SocialIconLink
+                href="//www.github.com/artdengun"
+                target="_blank"
+                aria-label="Github"
+              >
                 <FaGithubAlt />
               </SocialIconLink>
             </SocialIcons>
