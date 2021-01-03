@@ -72,10 +72,18 @@ const Footer = () => {
               All Rights Reserved.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="//https://web.facebook.com/dengunn"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+              <SocialIconLink
+                href="//https://www.youtube.com/channel/UC9urlHkHVmrse5UzJ_DEpfQ"
+                target="_blank"
+                aria-label="Youtube"
+              >
                 <FaYoutube />
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
